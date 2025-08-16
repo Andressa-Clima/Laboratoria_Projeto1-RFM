@@ -57,10 +57,4 @@ Também foram desconsiderados valores nulos das células. **A média salário fo
 - **Em Risco:** Realizar pesquisas de satisfação para entender os motivos do afastamento e enviar cupons de urgência (com prazos curtos) por canais mais pessoais, como WhatsApp. **Objetivo: reverter o risco de perda e reconquistar esses clientes antes que se tornem inativos.**
 - **Inertes:** Pesquisas de satisfação para investigar as causas do baixo desempenho, ofertas mais agressivas (ex.: descontos elevados) e campanhas de reengajamento via redes sociais. **Objetivo: reativar esses clientes ou redirecionar esforços com base no custo-benefício.**
 
-**Limitações/Próximos Passos:** 
-
-Certa dificuldade no uso do Looker Studio para criação de gráficos e no entendimento mais aprofundado de fórmulas específicas. 
-
-Em relação ao gráfico de dispersão, a classificação utilizada poderia ser mais bem distribuída entre os dados.
-
 **Links de interesse:** https://www.notion.so/Ficha-T-cnica-Projeto-1-20e50dfb472d80b08683fca18da3faac?source=copy_link
