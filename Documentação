@@ -1,0 +1,66 @@
+# Ficha Técnica - Projeto 1
+
+**Projeto 1_Segmentação de clientes: “O Mercado”.**
+
+**Objetivo**: análise descritiva e segmentação de clientes utilizando RFM para uma loja especializada em produtos alimentícios importados chamada "O Mercado".
+**Equipe:** projeto individual.
+
+**Ferramentas e Tecnologias:** Google Sheets, Looker Studio, Google Slides e Chat GPT.
+
+**Processamento e análises:** 
+
+**Conectar/importar Dados A Ferramentas 🎲**
+
+Foram utilizadas as fórmulas para importar (IMPORTRANGE) e para identificar valores nulos (COUNTBLANK) nos dados. 
+
+**Identificar E Gerenciar Valores Nulos ⬜**
+
+Houve 7 dados nulos (tabela transações) que não poderiam ser utilizados, pois se referem ao ID do cliente que é um identificador único essencial para segmentação e análise. No futuro, não seria possível prosseguir com a análise e isso poderia até atrapalhar a construção da visualização desses dados, por isso serão desconsiderados da análise. Na tabela clientes também foram encontrados valores nulos em salários anuais, mas não foram excluídos pois podem representar clientes que não trabalham ou estão desempregados.
+
+**Identificar E Gerenciar Valores Duplicados ♊**
+
+Foi encontrado valores duplicados mas eles não foram removidos, pois são compras feitas diversas vezes pelo mesmo cliente ou quantidade de produtos iguais, apenas se a linha dessas tabelas estivessem idênticas que seria necessário a remoção. 
+
+**Unir Tabelas♾️**
+
+Uni as tabelas de acordo com a arquitetura medalha. 
+
+Categorizei como bronze 🥉 os dados brutos. Outra aba onde fiz a alterações foi chamada de prata 🥈. A tabela ouro 🥇 foi categorizada as tabelas dinâmicas para uso.
+
+**Criar Novas Variáveis📊**
+
+Foram criadas as variáveis: idade, salário anual, estado civil, faixa etaria, media filhos, resposta campanha, lugar transação, valor total produtos.
+
+**Identificar E Manejar Dados Fora Do Alcance Da Análise/outliers**
+
+Interpretação sobre outliers ***idade***: 
+
+Foi encontrado 3 clientes com idade discrepante e, por isso, utilizei a formula moda para identificar a idade que mais aparece no banco de dados que me retornou a idade 49 que foi aplicada a esses clientes. 
+
+Interpretação sobre outliers ***salário***: 
+
+Informação importante:
+
+- Valores **abaixo de R$1.901,09** podem ser considerados **muito baixos/outliers para baixo**.
+- Valores **acima de R$102.593,41** podem ser considerados **muito altos/outliers para cima**.
+- Valores entre esses limites são considerados dentro do intervalo “normal”.
+
+Também foram desconsiderados valores nulos das células. **A média salário foi feita com base no desvio padrão.**
+
+**Resultados e Conclusões:** 
+
+**Estratégia por Segmento RFM**
+
+- **Campeões:** Priorizar pós-venda com cashbacks, programas VIP, descontos exclusivos e brindes personalizados. **Objetivo: Objetivo é seguir maximizando o seu valor.**
+- **Fiéis:** Oferecer pontos por maior gasto, incentivar compras mais frequentes e de maior valor, e comunicação de marketing personalizada destacando os benefícios de se tornar "VIP". **Objetivo é elevá-los a “Campeões”.**
+- **Potenciais:** Campanhas com frete grátis, ofertas personalizadas baseadas nos produtos mais consumidos e cashback na próxima compra. **Objetivo é melhorar métrica de recência ou valor monetário.**
+- **Em Risco:** Realizar pesquisas de satisfação para entender os motivos do afastamento e enviar cupons de urgência (com prazos curtos) por canais mais pessoais, como WhatsApp. **Objetivo: reverter o risco de perda e reconquistar esses clientes antes que se tornem inativos.**
+- **Inertes:** Pesquisas de satisfação para investigar as causas do baixo desempenho, ofertas mais agressivas (ex.: descontos elevados) e campanhas de reengajamento via redes sociais. **Objetivo: reativar esses clientes ou redirecionar esforços com base no custo-benefício.**
+
+**Limitações/Próximos Passos:** 
+
+Certa dificuldade no uso do Looker Studio para criação de gráficos e no entendimento mais aprofundado de fórmulas específicas. 
+
+Em relação ao gráfico de dispersão, a classificação utilizada poderia ser mais bem distribuída entre os dados.
+
+**Links de interesse:** https://www.notion.so/Ficha-T-cnica-Projeto-1-20e50dfb472d80b08683fca18da3faac?source=copy_link
